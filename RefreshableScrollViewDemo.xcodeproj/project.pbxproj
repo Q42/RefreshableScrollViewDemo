@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D5CBCCAC283E594700C90D53 /* RefreshableScrollViewDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBCCAB283E594700C90D53 /* RefreshableScrollViewDemoApp.swift */; };
+		D5CBCCAC283E594700C90D53 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBCCAB283E594700C90D53 /* DemoApp.swift */; };
 		D5CBCCAE283E594700C90D53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBCCAD283E594700C90D53 /* ContentView.swift */; };
 		D5CBCCB0283E594800C90D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CBCCAF283E594800C90D53 /* Assets.xcassets */; };
 		D5CBCCB3283E594800C90D53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CBCCB2283E594800C90D53 /* Preview Assets.xcassets */; };
+		D5CBCCBE283E597000C90D53 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBCCBA283E597000C90D53 /* CustomView.swift */; };
+		D5CBCCBF283E597000C90D53 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBCCBB283E597000C90D53 /* StackView.swift */; };
+		D5CBCCC1283E597000C90D53 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBCCBD283E597000C90D53 /* GridView.swift */; };
+		D5CBCCC3283E598000C90D53 /* Task+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBCCC2283E598000C90D53 /* Task+Extensions.swift */; };
+		D5CBCCC7283E59C400C90D53 /* RefreshableScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = D5CBCCC6283E59C400C90D53 /* RefreshableScrollView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D5CBCCA8283E594700C90D53 /* RefreshableScrollViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefreshableScrollViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5CBCCAB283E594700C90D53 /* RefreshableScrollViewDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollViewDemoApp.swift; sourceTree = "<group>"; };
+		D5CBCCAB283E594700C90D53 /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		D5CBCCAD283E594700C90D53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D5CBCCAF283E594800C90D53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5CBCCB2283E594800C90D53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D5CBCCBA283E597000C90D53 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		D5CBCCBB283E597000C90D53 /* StackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		D5CBCCBD283E597000C90D53 /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		D5CBCCC2283E598000C90D53 /* Task+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CBCCC7283E59C400C90D53 /* RefreshableScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +61,10 @@
 		D5CBCCAA283E594700C90D53 /* RefreshableScrollViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D5CBCCAB283E594700C90D53 /* RefreshableScrollViewDemoApp.swift */,
+				D5CBCCAB283E594700C90D53 /* DemoApp.swift */,
 				D5CBCCAD283E594700C90D53 /* ContentView.swift */,
+				D5CBCCB9283E597000C90D53 /* Views */,
+				D5CBCCC4283E598300C90D53 /* Extensions */,
 				D5CBCCAF283E594800C90D53 /* Assets.xcassets */,
 				D5CBCCB1283E594800C90D53 /* Preview Content */,
 			);
@@ -65,6 +77,24 @@
 				D5CBCCB2283E594800C90D53 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D5CBCCB9283E597000C90D53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5CBCCBA283E597000C90D53 /* CustomView.swift */,
+				D5CBCCBB283E597000C90D53 /* StackView.swift */,
+				D5CBCCBD283E597000C90D53 /* GridView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5CBCCC4283E598300C90D53 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D5CBCCC2283E598000C90D53 /* Task+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +113,9 @@
 			dependencies = (
 			);
 			name = RefreshableScrollViewDemo;
+			packageProductDependencies = (
+				D5CBCCC6283E59C400C90D53 /* RefreshableScrollView */,
+			);
 			productName = RefreshableScrollViewDemo;
 			productReference = D5CBCCA8283E594700C90D53 /* RefreshableScrollViewDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +144,9 @@
 				Base,
 			);
 			mainGroup = D5CBCC9F283E594700C90D53;
+			packageReferences = (
+				D5CBCCC5283E59C400C90D53 /* XCRemoteSwiftPackageReference "RefreshableScrollView" */,
+			);
 			productRefGroup = D5CBCCA9283E594700C90D53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CBCCC3283E598000C90D53 /* Task+Extensions.swift in Sources */,
+				D5CBCCBE283E597000C90D53 /* CustomView.swift in Sources */,
 				D5CBCCAE283E594700C90D53 /* ContentView.swift in Sources */,
-				D5CBCCAC283E594700C90D53 /* RefreshableScrollViewDemoApp.swift in Sources */,
+				D5CBCCAC283E594700C90D53 /* DemoApp.swift in Sources */,
+				D5CBCCC1283E597000C90D53 /* GridView.swift in Sources */,
+				D5CBCCBF283E597000C90D53 /* StackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +379,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D5CBCCC5283E59C400C90D53 /* XCRemoteSwiftPackageReference "RefreshableScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q42/RefreshableScrollView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D5CBCCC6283E59C400C90D53 /* RefreshableScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5CBCCC5283E59C400C90D53 /* XCRemoteSwiftPackageReference "RefreshableScrollView" */;
+			productName = RefreshableScrollView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D5CBCCA0283E594700C90D53 /* Project object */;
 }

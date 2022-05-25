@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "refreshablescrollview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Q42/RefreshableScrollView.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d07f39158ae2871ba352811fc09f69351ff2df66"
+      }
+    }
+  ],
+  "version" : 2
+}
