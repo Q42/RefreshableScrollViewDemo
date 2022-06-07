@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Q42/RefreshableScrollView.git",
       "state" : {
-        "revision" : "bb4aa78e575347d005a8c616198b7f95ddb1e04a",
-        "version" : "0.0.1"
+        "revision" : "45ab1092d36ca77bbbeee1534251085d974dc40e",
+        "version" : "0.0.2"
       }
     }
   ],
